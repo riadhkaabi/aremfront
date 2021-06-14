@@ -1,0 +1,55 @@
+
+<ion-content scroll-y="false">
+  <div class="container">
+    <div class="title">Vous êtes en panne ?</div>
+    <div class="content">
+      <form role="form" [formGroup]="requestForm" (ngSubmit)="onSubmit()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nom</span>
+            <input formControlName="firstName" type="text" placeholder="Votre nom" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Prénom</span>
+            <input formControlName="lastName" type="text" placeholder="Votre prénom" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input formControlName="email" type="text" placeholder="Votre email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Numéro de téléphone</span>
+            <input formControlName="phone" type="text" placeholder="Numéro" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Localisation</span>
+            <input formControlName="location" type="text" placeholder="Localisation" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Type du véhicule</span>
+            <ion-select formControlName="carType" type="text" placeholder="Berline" required>
+              <ion-select-option value="Berline">Berline</ion-select-option>
+              <ion-select-option value="Commerciale">Commerciale</ion-select-option>
+              <ion-select-option value="SUV">SUV</ion-select-option>
+              <ion-select-option value="4 x 4">4 x 4</ion-select-option>
+              <ion-select-option value="Hybride">Hybride</ion-select-option>
+            </ion-select>
+          </div>
+          <div class="input-box">
+            <span class="details">Type de la batterie</span>
+            <ion-select formControlName="batteryType" type="text" placeholder="ZAP" required>
+              <ion-select-option value="ZAP">ZAP</ion-select-option>
+              <ion-select-option value="FIAMM">FIAMM</ion-select-option>
+            </ion-select>
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Envoyer">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</ion-content>

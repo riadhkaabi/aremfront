@@ -1,20 +1,67 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="has-header" overflow-scroll="false" has-bouncing="true" style="--ion-background-color:#f0f0f0;">
+  <ion-card class="header-card-style" style="--ion-background-color:#ffffff; padding: 0 10px;margin-top: 35px;">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+      <img src="assets/logo_arem.png"/>
+
+
+      <ion-label style=" margin-top: 2.5%;" >
+
+        <div style="padding-bottom: 7.5px;
+        border-bottom: 1px solid rgba(255,255,255, 0.8);
+        margin-left: 5px;">
+          <p style=" font-size: 16px;
+          text-transform: capitalize;
+          margin-left: 0;"></p>
+          <h1 style="margin-left: 0; font-size: 14px;">Bienvenue à Arem Group</h1>
+        </div>
+          <p style="margin-top: 15px; margin-top: 1.5px;
+          font-weight: unset; font-size: 11px;">Vous pouvez choisir un service </p>
+             </ion-label>
+             <ion-icon class="largeIcon" name="call-outline" style="margin-top: -120px; color: rgb(255, 255, 255);position: absolute;margin-left: 80%;"  (click)="openDial()"></ion-icon>
+
+      
+  </ion-card>
+  <ion-card style="--ion-background-color:#ffffff;margin-top: 30px;">
+ 
+
+   <ion-row class="myrow" style="margin-top: 25px;">
+       <ion-col class="mycols">
+         <div class="myBTNs" routerLink="/request">
+            <ion-icon class="largeIcon" name="car-outline" item-start></ion-icon>
+               <p class="myHeader">Vous êtes en panne ?</p>     
+               </div> 
+                </ion-col>
+                
+                <ion-col class="mycols1">
+                    <div class="myBTNs1" routerLink="/products">
+                         
+                            <ion-icon class="largeIcon" name="eye-outline" item-start></ion-icon>
+                         <p class="myHeader">Consultez nos produits</p>     
+                            
+                          
+                    </div> 
+                    </ion-col>
+              </ion-row>
+              <ion-row class="myrow">
+                <ion-col class="mycols">
+                  <div class="myBTNs2" routerLink="/reclamation">
+                     <ion-icon class="largeIcon" name="receipt-outline" item-start></ion-icon>
+                        <p class="myHeader">Envoyez une réclamation</p>     
+                        </div> 
+                         </ion-col>
+                         
+                         <ion-col class="mycols1">
+                             <div class="myBTNs3" routerLink="/login">
+                                  
+                                     <ion-icon class="largeIcon" name="person-circle-outline" item-start></ion-icon>
+                                  <p class="myHeader">Connection<br>des employés
+                                     
+                                   
+                             </div> 
+                             </ion-col>
+                       </ion-row>
+  </ion-card>
+  
 </ion-content>

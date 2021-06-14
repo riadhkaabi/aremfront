@@ -1,0 +1,63 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Nos produits</ion-title>
+  </ion-toolbar>
+</ion-header>,
+<ion-content fullscreen>
+
+  <ion-card style="height: 70px;background-color: #e7ffd7;">
+    <div >
+    <div class="card-head">
+      <p class="title-style">Batteries ZAP</p>
+      </div>
+    </div>
+    
+
+  </ion-card>
+  <ion-slides style="margin-top: -15px;">
+    <ion-slide *ngFor="let battery of zapBatteries" > 
+      <ion-card style="width: 100%;">
+        <img src="assets/zapzap.PNG" />
+     
+        <ion-card-content>          
+          <ion-label style="float: left;color: black;font-size: 14px;"><b>Code :</b> {{battery.code}}</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14px;"><b>Désignation :</b> {{battery.designation}}</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14x;"><b>Capacité en (Ah) :</b> {{battery.capacity}}</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14px;"><b>Pouvoir de démarrage (A)EN :</b> {{battery.demarrage}}</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14px;"><b>Prix unitaire en HT :</b> {{battery.pvuht}} dt</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14px;"><b>Prix unitaire en TTC :</b> {{battery.pvuttc}} dt</ion-label>
+
+
+        </ion-card-content>
+        <ion-button expand="block">See more</ion-button>
+      </ion-card> 
+    </ion-slide>
+   </ion-slides>
+  <ion-card style="height: 70px;background-color: #e7ffd7;">
+   <div class="card-head">
+    <p class="title-style">Batteries FIAMM</p>
+    </div>
+  </ion-card>
+  <ion-slides style="margin-top: -15px;">
+    <ion-slide *ngFor="let battery of fiammBatteries" > 
+      <ion-card style="width: 100%;">
+        <img src="assets/zapzap.PNG" />
+     
+        <ion-card-content>          
+          <ion-label style="float: left;color: black;font-size: 14px"><b>Code : </b>{{battery.code}}</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14px"><b>Désignation : </b>{{battery.designation}}</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14px"><b>Capacité en (Ah) : </b>{{battery.capacity}}</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14px"><b>Pouvoir de démarrage (A)EN : </b>{{battery.demarrage}}</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14px"><b>Prix unitaire en HT : </b>{{battery.pvuht}} dt</ion-label><br>
+          <ion-label style="float: left;color: black;font-size: 14px"><b>Prix unitaire en TTC : </b>{{battery.pvuttc}} dt</ion-label>
+
+
+        </ion-card-content>
+        <ion-button expand="block">See more</ion-button>
+      </ion-card> 
+    </ion-slide>
+   </ion-slides>
+
+
+ 
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="has-header" overflow-scroll="false" has-bouncing="true"  style="--ion-background-color:#e9e6e6;" >
+  <h1></h1>
+    <div id="header">
+    <img src="assets/logo_arem.png" />
+    <ion-row>
+    <h1 style="color: white;" >Se&nbsp;</h1><h1 style="color: rgb(27, 172, 35);">Con</h1><h1 style="color: white;" >necter</h1>
+  </ion-row>
+  </div>
+
+  <form id="form" role="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <ion-input style="font-family: Roboto;" ng-model="name" formControlName="username" placeholder="Username" class="input-underline" color="none"></ion-input>
+    <ion-input style="font-family: Roboto;" formControlName="password" placeholder="Password" type ="password" class="input-underline"></ion-input>
+    <ion-button style="text-transform: lowercase; text-transform: capitalize;font-family: Roboto;" expand="block" shape="round" color="primary" class="ion-btn" type="submit">Login</ion-button>
+  </form>
+</ion-content>
